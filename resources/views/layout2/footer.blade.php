@@ -29,8 +29,6 @@
         <ul>
           <li><i class="bx bx-chevron-right"></i> <a href="{{ route('sp') }}">DIKO SP</a></li>
           <li><i class="bx bx-chevron-right"></i> <a href="{{ route('pos') }}">DIKO POS</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="{{ route('andromedasp') }}">Andromeda SP</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="{{ route('andromedapos') }}" > Andromeda POS </a></li>
         </ul>
       </div>
 

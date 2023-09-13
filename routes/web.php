@@ -4,9 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\spController;
 use App\Http\Controllers\posController;
 use App\Http\Controllers\landingController;
-use App\Http\Controllers\andromedaspController;
-use App\Http\Controllers\andromedaposController;
-use App\Http\Controllers\landing2Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +17,7 @@ use App\Http\Controllers\landing2Controller;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
 });
 
 // Route::get('/hello', [dashbordController::class, 'hello'])->name('alam');
@@ -35,9 +32,3 @@ Route::get('/sp', [spController::class, 'index'])->name('sp');
 Route::get('/pos', [posController::class, 'index'])->name('pos');
 
 Route::get('/landing', [landingController::class, 'index'])->name('landing');
-
-Route::get('/andromedasp', [andromedaspController::class, 'index'])->name('andromedasp');
-
-Route::get('/andromedapos', [andromedaposController::class, 'index'])->name('andromedapos');
-
-Route::get('/landing2', [landing2Controller::class, 'index'])->name('landing2');
